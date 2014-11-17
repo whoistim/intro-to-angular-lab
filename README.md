@@ -6,11 +6,11 @@ You are going to build a shopping cart for **bookly**, the latest and greates on
 
 Fork and clone repository:
 
-	https://github.com/aikalima/wdi6-angular-intro-lab
+	https://github.com/wdi-sf-fall/angular-intro-lab
 
-Change to project directory and fire up the web server:
+Change to project directory and fire up web server:
 
-	node web-server.js
+	npm start
 	
 Go to home page:
 
@@ -18,7 +18,7 @@ Go to home page:
 
 ###Looking around
 
-Lot's of things are already done for you. Inspect **index.html** view and find ng-controller directive. The view is already wired up with BooksController, see **books_controller.js**. Since we don't know yet how to talk to a server, BooksController 'loads' a static list of books from **data.js**. 'books' is a scoped variable (think instance variable) in the controller, the view iterates over books using ng-repeat to display the book list. Yes, there's also a css file, ignore it, no need to css select and manipulate DOM objects with jQuery - yeah!
+Lot's of things are already done for you. Inspect **index.html** view and find `ng-controller` directive. The view is already wired up with `BooksController`, see **books_controller.js**. Since we don't yet know how to talk to a server, BooksController loads a static list of books from **data.js**. `books` is a scoped variable (think instance variable) in the controller, the view iterates over books using `ng-repeat` to display the book list. There's also a css file, ignore it, no need to css select and manipulate DOM objects with jQuery - yeah!
 
 ###Assignment
 	
@@ -38,9 +38,9 @@ Check out the list of books and the shopping cart wire frame. Look for elements 
 
 - For 'order by' drop down, find out how to bind a 'select input' to a model. Also check out 'orderBy' Angular filter.
 
-- ng-click is your friend
+- `ng-click` is your friend
 
-- Find out how to ng-pluralize (oops) the item count
+- Find out how to ng-pluralize the item count
 
 - Don't get fooled by the number of features. A lot is taken care of by the view and use of build-in Angular directives. The javascript part is only about 15 lines of code. 
   
@@ -58,8 +58,6 @@ Cart management becomes a bit more complex. You won't get away with simply addin
 	} 
 
 Before adding a book, you need to find out if it's already in the cart, and if so, increase its quantity.
-
-http://underscorejs.org/ comes in handy for 'ruby like' manipulation of collections / arrays.
 
 
 
