@@ -14,7 +14,7 @@ Change to project directory and fire up web server:
 	
 Go to home page:
 
-	http://localhost:8000/app/index.html
+	http://localhost:4000/app/index.html
 
 ###Looking around
 
